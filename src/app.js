@@ -20,16 +20,42 @@ app.get("/user", async (req, res) => {
         res.status(400).send("Error saving the data" + err.message)
     }
 })
-
+// Get all the users
 app.get("/feed", async (req, res) => {
     
     try{
         const users = await User.find({})
         res.send(users)
     } catch(err) {
-        res.status(400).send("Error saving the data" + err.message)
+        res.status(400).send("something went wrong" + err.message)
     }
 
+})
+
+// Find by id and Delete
+
+app.delete("/user", async (req, res) => {
+    const userId = req.body.userId;
+
+    try{
+        const user = await User.findByIdAndDelete(userId)
+        res.send("user delete successfully!")
+    } catch(err) {
+        res.status(400).send("something went wrong" + err.message)
+    }
+})
+// Update a user
+app.patch("/user", async (req, res) => {
+    const userId = req.body.userId;
+    const data = req.body;
+    try{
+        await User.findByIdAndUpdate({_id: userId}, data, {
+            runValidators: true,
+        })  
+        res.send("user updated successfully!")
+    } catch(err) {
+        res.status(400).send("something went wrong " + err.message)
+    }
 })
 
 app.post("/signup", async (req, res) => {
