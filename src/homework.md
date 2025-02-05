@@ -48,6 +48,19 @@
 - User.findOne() with duplicate email ids, which object returned
 - API - get user by gmail
 - API - feed Api - Get /feed -get all the users from th database
+- API get user by id
+- API - delete a user
+- Diff b/w Put and Patch
+- API - update a user
+- explore mongoose documentations for model methods
+- what are options in model methods
+- API - update a user with email id
 
 # <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
+- Explore schematype options from the documentations
+- add reqired, unique, lowercase, min, minlength, trim,
+- add default
+- Create custom validate function for gender
+- improve the database schema - Put all appropiate validations on each field in schema
+- Add timestamps to the userSchema
