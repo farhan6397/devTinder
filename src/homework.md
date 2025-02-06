@@ -64,3 +64,7 @@
 - Create custom validate function for gender
 - improve the database schema - Put all appropiate validations on each field in schema
 - Add timestamps to the userSchema
+- Add API level validation on patch request and signup post api
+- DATA Sanitization - Add api validation for each field
+- Install validator
+- Explore validator library function and use validator function for password, email, photo url
