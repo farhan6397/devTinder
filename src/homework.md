@@ -67,4 +67,8 @@
 - Add API level validation on patch request and signup post api
 - DATA Sanitization - Add api validation for each field
 - Install validator
-- Explore validator library function and use validator function for password, email, photo url
+- Explore validator library function and use validator function for password, email, photo 
+- Never Trust - req.body
+
+# ....................................................................
+
