@@ -101,3 +101,7 @@
 - Create routes for folder for managing auth, profile, request routers
 - Create authRouter profileRouter and requestRouter
 - Import these routers in app.js
+- Create post /logout API 
+- Create patch /profile/edit API
+- Create patch /profile/password => for forget password
+- Make sure you validate all data in every post, patch apis

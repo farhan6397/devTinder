@@ -14,6 +14,19 @@ app.use("/", authRouter)
 app.use("/", profileRouter)
 app.use("/", requestRouter)
 
+// Get all the users
+// app.get("/feed", async (req, res) => {
+
+//     try{
+//         const users = await User.find({})
+//         res.send(users)
+//     } catch(err) {
+//         res.status(400).send("something went wrong" + err.message)
+//     }
+
+// })
+
+
 connectDB()
     .then(() => {
         console.log("Database connection is established!")
